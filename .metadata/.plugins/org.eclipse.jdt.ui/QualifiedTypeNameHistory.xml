@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.app.jdbc.quest.servlet.GuestList"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.guest.vo.GuestVO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.guest.dao.GuestDAO"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputFilter.Config"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.product.config.Configuration"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.guest.vo.ProductVO"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.product.vo.ProductVO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.product.dao.ProductDAO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.user.config.Configuration"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.user.vo.UserVO"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpConnectTimeoutException"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.user.dao.UserDAO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.post.config.Configuration"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.post.vo.PostVO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.post.dao.PostDAO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.menu.config.Configuration"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.menu.vo.MenuVO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.menu.dao.MenuDAO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.student.config.Configuration"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.student.vo.StudentVO"/>
+    <fullyQualifiedTypeName name="com.app.jdbc.student.dao.StudentDAO"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.rmi.ServerException"/>
+    <fullyQualifiedTypeName name="com.app.mvc.domain.ProductVO"/>
+    <fullyQualifiedTypeName name="com.app.mvc.repository.ProductDAO"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package com.app.jdbc.menu.dao;
+
+public class MenuDAO {
+
+}

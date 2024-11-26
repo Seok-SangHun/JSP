@@ -1,0 +1,5 @@
+package com.app.jdbc.student.vo;
+
+public class StudentVO {
+
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>my1_product</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+  	<servlet-name>ProductList</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductList</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductList</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>ProductWrite</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductWrite</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductWrite</servlet-name>
+  	<url-pattern>/write</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProductWriteOk</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductWriteOk</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductWriteOk</servlet-name>
+  	<url-pattern>/write/ok</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>ProductRead</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductRead</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductRead</servlet-name>
+  	<url-pattern>/read</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>ProductUpdate</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductUpdate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductUpdate</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProductUpdateOk</servlet-name>
+  	<servlet-class>com.app.jdbc.product.servlet.ProductUpdateOk</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductUpdateOk</servlet-name>
+  	<url-pattern>/update/ok</url-pattern>
+  </servlet-mapping>
+</web-app>

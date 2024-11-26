@@ -1,0 +1,5 @@
+package com.app.jdbc.guest.domain;
+
+public class GuestVO {
+	
+}

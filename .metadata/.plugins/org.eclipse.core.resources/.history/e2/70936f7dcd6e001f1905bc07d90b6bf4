@@ -1,0 +1,5 @@
+package com.app.jdbc.menu.vo;
+
+public class MenuVO {
+
+}

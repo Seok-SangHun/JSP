@@ -1,0 +1,5 @@
+package com.app.jdbc.guest.servlet;
+
+public class GuestWrite {
+
+}

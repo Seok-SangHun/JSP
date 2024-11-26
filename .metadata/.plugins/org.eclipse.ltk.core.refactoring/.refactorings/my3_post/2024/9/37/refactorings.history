@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.app.jdbc.post.config.Configuartion.java&apos; to &apos;Configuration.java&apos;&#x0D;&#x0A;- Original project: &apos;my3_post&apos;&#x0D;&#x0A;- Original element: &apos;com.app.jdbc.post.config.Configuartion.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.app.jdbc.post.config.Configuration.java&apos;" description="Rename compilation unit &apos;Configuartion.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.app.jdbc.post.config{Configuartion.java" name="Configuration.java" references="false" stamp="1725899054930" version="1.0"/>
+</session>

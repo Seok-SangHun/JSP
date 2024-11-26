@@ -1,0 +1,5 @@
+package com.app.jdbc.user.config;
+
+public class Configuration {
+
+}

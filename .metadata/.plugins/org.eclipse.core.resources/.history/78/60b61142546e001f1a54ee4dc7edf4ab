@@ -1,0 +1,20 @@
+package com.app.jdbc.guest.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class GuestWriteOK extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	   @Override
+	   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//		   사용자가 화면에서 작성한 정보 가져오기
+//		   DAO를 통해서 DB에 INSERT하기
+//		   목록으로 이동하기
+	      req.getRequestDispatcher("write.jsp").forward(req, resp);
+	   }
+}

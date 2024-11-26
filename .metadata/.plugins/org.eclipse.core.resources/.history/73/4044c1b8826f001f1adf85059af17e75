@@ -1,0 +1,66 @@
+package com.app.mvc.controller.product;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.app.mvc.Result;
+
+// .product로 끝나는 모든 요청을 처리해주는 FrontController
+public class ProductFrontController extends HttpServlet{
+	
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// 모든 GET 요청을 POST 메서드로 처리
+		doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// 요청 URI를 가져옴
+		String uri = req.getRequestURI();
+		Result result = null;
+		// 컨텍스트 경로를 제외한 URI 부분을 추출하고 ".product" 확장자를 제거
+		String target = uri.substring(req.getContextPath().length());
+		target = target.split("\\.")[0];
+		
+		// DB에 접근하는 로직만 Controller로 관리
+		if(target.equals("/write")) {
+			// "write.jsp"로 포워딩
+			result = new Result();
+			result.setPath("write.jsp");
+		} else if(target.equals("/write/ok")) {
+			// WriteOkController 실행
+			result = new WriteOkController().execute(req, resp);
+		} else if(target.equals("/list")) {
+			// ListController 실행
+			result = new ListController().execute(req, resp);
+		} else if(target.equals("/read")) {
+			// ViewController 실행하여 개별 상품 조회 처리
+			result = new ReadController().execute(req, resp);
+		} else if(target.equals("/update")) {
+			// UpdateController 실행하여 상품 정보 수정 처리
+			result = new UpdateController().execute(req, resp);
+		} 
+//		else if(target.equals("/delete")) {
+//			// DeleteController 실행하여 상품 삭제 처리
+//			result = new DeleteController().execute(req, resp);
+//		}
+		
+		// 결과가 null이 아닌 경우에만 처리
+		if(result != null) {
+			// 리다이렉트 여부에 따라 리다이렉트 또는 포워드 처리
+			if(result.isRedirect()) {
+				resp.sendRedirect(req.getContextPath() + result.getPath());
+			} else {
+				req.getRequestDispatcher(result.getPath()).forward(req, resp);
+			}
+		}
+	}
+}
+

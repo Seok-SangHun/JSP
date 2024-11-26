@@ -1,0 +1,30 @@
+package com.app.jdbc.post.vo;
+
+public class PostVO {
+	private Long id;
+	private String postTitle;
+	private int postLiked;
+	
+	public PostVO() {;}
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getPostTitle() {
+		return postTitle;
+	}
+	public void setPostTitle(String postTitle) {
+		this.postTitle = postTitle;
+	}
+	public int getPostLiked() {
+		return postLiked;
+	}
+	public void setPostLiked(int postLiked) {
+		this.postLiked = postLiked;
+	}
+	
+	
+}

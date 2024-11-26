@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Read</title>
+</head>
+<body>
+   <button>수정하기</button>
+   <button>삭제하기</button>
+   <table>
+      <tr>
+         <th>번호</th>
+         <th>이름</th>
+         <th>생년월일</th>
+      </tr>
+      <tr>
+         <td><%= %></td>
+         <td><%= %></td>
+         <td><%= %></td>
+      </tr>
+   </table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.app.jdbc.product.servlet;
+
+public class ProductUpdate {
+
+}

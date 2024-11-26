@@ -1,0 +1,7 @@
+package com.app.jdbc.guest.vo;
+
+public class GuestVO {
+	private Long id;
+	private String guestName;
+	private String guestBirth;
+}

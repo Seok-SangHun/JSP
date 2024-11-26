@@ -1,0 +1,5 @@
+package com.app.jdbc.post.dao;
+
+public class PostDAO {
+
+}

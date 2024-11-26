@@ -1,0 +1,5 @@
+package com.app.jdbc.guest.comfig;
+
+public class Configuration {
+
+}

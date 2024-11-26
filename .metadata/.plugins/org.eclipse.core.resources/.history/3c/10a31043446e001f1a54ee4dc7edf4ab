@@ -1,0 +1,5 @@
+package com.app.jdbc.guest.dao.copy;
+
+public class GuestDAO {
+
+}

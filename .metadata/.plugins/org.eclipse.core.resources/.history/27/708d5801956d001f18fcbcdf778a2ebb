@@ -1,0 +1,54 @@
+package com.app.my.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class MyIntro extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String num1Str = request.getParameter("num1");
+		String num2Str = request.getParameter("num2");
+		String operation = request.getParameter("operation");
+
+		// 기본 결과값을 0으로 설정
+		Object result = 0;
+
+		try {
+			int num1 = Integer.parseInt(num1Str);
+			int num2 = Integer.parseInt(num2Str);
+
+			switch (operation) {
+				case "add":
+					result = num1 + num2;
+					break;
+				case "subtract":
+					result = num1 - num2;
+					break;
+				case "multiply":
+					result = num1 * num2;
+					break;
+				case "divide":
+					// 나눗셈일 때만 double로 처리
+					if (num2 == 0) {
+						request.setAttribute("error", "0으로 나눌 수 없습니다.");
+					} else {
+						double divisionResult = (double) num1 / num2;
+						result = divisionResult;
+					}
+					break;
+				default:
+					request.setAttribute("error", "잘못된 연산입니다.");
+			}
+		} catch (NumberFormatException e) {
+			request.setAttribute("error", "숫자를 정확히 입력해주세요.");
+		}
+
+		request.setAttribute("result", result);
+		request.getRequestDispatcher("num.jsp").forward(request, response);
+	}
+}

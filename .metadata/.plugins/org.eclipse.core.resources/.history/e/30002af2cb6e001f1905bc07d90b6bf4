@@ -1,0 +1,5 @@
+package com.app.jdbc.post.servlet;
+
+public class PostUpdateOk {
+
+}

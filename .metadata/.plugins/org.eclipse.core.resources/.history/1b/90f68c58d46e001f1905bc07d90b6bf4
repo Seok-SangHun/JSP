@@ -1,0 +1,5 @@
+package com.app.jdbc.student.config;
+
+public class Configuration {
+
+}

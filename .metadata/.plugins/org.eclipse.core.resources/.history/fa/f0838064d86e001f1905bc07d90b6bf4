@@ -1,0 +1,5 @@
+package com.app.jdbc.student.servlet;
+
+public class StudentDeleteOk {
+
+}
